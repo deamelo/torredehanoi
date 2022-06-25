@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.todasTorres {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+
+    float: left;
+}
+
+
+.torres{
+    display: flex; 
+    flex-direction: column-reverse; 
+    align-items: center;
+
+    
+    width: 10px;
+    height: 300px;
+
+    margin: 200px;   
+
+    background-color: aquamarine;
+
+    border-radius: 2px;
+}
+
+
+.torres:hover {
+    background-color:darkmagenta ;
+}
+
+
+.discos {
+    border-radius: 3px;
+
+    height: 30px;
+
+    text-align: center;
+}
+
+
+.disco1 {
+    
+    width: 25px;
+
+    background-color: yellow;
+}
+
+.disco2 {
+    width: 50px;
+
+    background-color: red;
+}
+
+.disco3 {
+    width: 75px;
+    
+    background-color: green;
+}
+
+.disco4 {
+    width: 100px;
+
+    background-color: blue;
+}
+
+
+
+/*** Mobile First ***/
+
+@media(max-width: 400px){
+
+    body {
+        background-color: gray;
+        color: blueviolet
+    }
+
+    .torres{
+        background-color: chartreuse;
+    }
+
+    .torres:hover{
+        background-color: chocolate;
+    }
+}

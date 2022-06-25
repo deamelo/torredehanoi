@@ -1,19 +1,3 @@
-// Só pode mover um disco por vez
-// Cada dico deve ser passado para o topo da outra pilha
-// Um disco maior não pode ficar em cima de um menor
-// São três colunas iguais
-// São quatro discos de largura diferentes
-
-//pegar as torres e discos
-//preciso criar evento de click pra selecionar a torre start/origem
-//qndo clicar nessa torre, o disco do topo tem que ser pego
-//clicar na torre destino
-//verificar se tem um disco menor
-//caso não tenha, a torre destino recebe o disco
-//qndo todos os discos estiverem na torre end, acabou o jogo
-
-
-// Criação das torres e discos 
 const main = document.querySelector("main");
 
 const section = document.createElement("section");
@@ -61,11 +45,8 @@ disco1.className = "discos disco1";
 torreStart.appendChild(disco1);
 
 
-
-//torre origem === true
 let torreClique = true;
 
-//disco do topo
 let moveDisco = 0;
 
 let contador = 0;
@@ -80,14 +61,14 @@ function selecionaTorre(event){
 
 
 
-function movendoDisco(torre){ //torre origem
+function movendoDisco(torre){ 
     if(torreClique === true || torreClique === null){
         
         moveDisco = torre.lastElementChild
         moveDisco.style.border = "3px solid black"
         torreClique = false         
         
-    } else {  //torre destino
+    } else { 
         torreClique = true
         let destino = torre.lastElementChild
 
